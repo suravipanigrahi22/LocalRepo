@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    position: relative;
+    width: auto;
+    height: 720px;
+    background-image: url("images/Screen 1.png");
+    background-size: cover;
+}
+
+nav {
+    position: absolute;
+    top: 24px;
+    left: -493px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: #EDEDF5;
+    display: inline-block;
+    margin: 8px 6px;
+    padding: 3px 24px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid mediumblue;
+
+}
+
+.mountain-image {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heading h1 {
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    height: 78px;
+    top: 209px;
+    left: 40px;
+    padding: 15px;
+    font-family: 'Bebas Kai', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    color: #EDEDF5;
+    line-height: 85px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.paragraph {
+    position: absolute;
+    top: 313px;
+    left: 234px;
+    transform: translateX(-50%);
+    color: #EDEDF5;
+    padding: 7px;
+    width: auto;
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+
+}
+
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-icons img {
+    width: 140px;
+    height: 20px;
+    margin: 29px 20px;
+}
+
+.mountain-image:hover,
+.social-icons:hover {
+    border: 2px solid mediumblue;
+}
+
+.scroll-text {
+    position: absolute;
+    width: 40px;
+    height: 34px;
+    top: 591px;
+    left: 650px;
+    transform: rotate(90deg);
+    color: #EDEDF5;
+    padding: 3px 6.6px;
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: -0.07em;
+    text-align: center;
+}
+
+.scroll-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 630px;
+    left: 656px;
+    padding: 3px 6.6px;
+}
+
+
+div.share-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 600px;
+    left: 1200px;
+}
+
+
+
+.black-section {
+
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 370px;
+    background-color: #010101;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.everest-section {
+    position: absolute;
+    width: 271px;
+    height: 120px;
+    top: 200px;
+    left: 690px;
+
+    transform: translateX(-50%);
+    color: #EDEDF5;
+    text-align: center;
+    opacity: 0;
+    z-index: 1;
+}
+
+.everest-section h1 {
+    font-family: 'Bebas Kai', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 9px;
+    letter-spacing: 0em;
+    text-align: center;
+    opacity: 0;
+    color: #EDEDF5;
+
+}
+
+.everest-section p {
+    font-family: 'Avenir LT Std', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    opacity: 0;
+    color: #EDEDF5;
+
+}
+
+.everest-section p:hover {
+    cursor: pointer;
+    border-bottom: 2px solid mediumblue;
+}
+
+.video-image img {
+    position: absolute;
+    width: 580px;
+    height: 286px;
+    top: 334px;
+    left: 390px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.35) 100%);
+    box-shadow: 2px 2px 2px 2px #00000080;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-text,
+.scroll-icon,
+.share-icon,
+.heading,
+.paragraph,
+.black-section,
+.everest-section,
+.video-image img,
+.everest-section h1,
+.everest-section p {
+    transition: opacity 1s ease;
+}
